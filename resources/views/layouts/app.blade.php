@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -25,7 +27,29 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
-                </a>
+                        </a>
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           All Activities
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="http://localhost/myproject/public/gallery">gallery</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public//myprofile/create">myprofile crate</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public//myprofile/%7Bid%7D/edit">ProfileId</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public//newgallery">New gallery</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public//coronavirus">coronavirus</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/teacher">teacher</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/student">student</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/table">table</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/home">Home</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/staff">staff</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/post">post</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/profile">profile</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/vehicle">vehicle</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/user">user</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/book">book</a>
+                            <a class="dropdown-item" href="http://localhost/myproject/public/covid19">covid19</a>
+                            
+                        </div>       
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>

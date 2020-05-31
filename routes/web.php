@@ -118,3 +118,10 @@ Route::resource('profile', 'profileController');
 Route::resource('user', 'UserController');
 
 Route::resource('book', 'bookController');
+Route::middleware(['auth'])->group(function () 
+{
+    Route::resource('order', 'orderController');
+    Route::resource('order-product', 'orderProductController');
+    Route::resource('payment', 'paymentController');
+    Route::resource('product', 'productController');
+});
